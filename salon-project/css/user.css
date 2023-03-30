@@ -1,0 +1,165 @@
+html,
+body {
+  font-family: 'Century Gothic', Sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  margin: 0;
+  padding: 0;
+}
+#mobile-menu-checkbox {
+  display: none;
+}
+#mobile-menu-checkbox:checked ~ #mobile-menu-overlay {
+  display: block;
+}
+#mobile-menu-checkbox:checked ~ .mobile-menu {
+  visibility: visible;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+#mobile-menu-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+.mobile-menu {
+  position: fixed;
+  left: 0;
+  z-index: 101;
+  top: 0;
+  visibility: hidden;
+  width: 300px;
+  height: 100%;
+  background: #dcdcdc;
+  color: white;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+.mobile-menu h1 {
+  color: black;
+}
+#mobile-menu-btn {
+  background-color: transparent;
+  border: none;
+  color: #222;
+  font-size: 30px;
+  font-weight: 300;
+  left: 0;
+  line-height: 1.6em;
+  position: relative;
+  padding: 0;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+header {
+  position: fixed;
+  top:0%;
+  left:0%;
+width:100%;
+height: 10%;
+z-index: 9;
+  background: #67B26F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border-bottom: 2px solid #d3d3d3;
+}
+header .menu-link {
+  color: #fff;
+  text-transform: uppercase;
+}
+#brnd{
+  position:absolute;
+  top:25%;
+  left:10% !important;
+  font-family: sans-serif;
+  font-size: 30px;
+  color:white;
+  cursor: pointer;
+  padding: 0px;
+}
+#items {
+  line-height: 1.75;
+}
+#listmnu{
+   list-style-type: none;
+  text-decoration: none;
+  position:absolute;
+  top:25%;
+  right:0px;
+  padding-right: 40px;
+  width:50%;
+  font-family: sans-serif;
+  font-size: 18px;
+  color:white;
+  cursor: pointer;
+}
+#listmnu li{
+  display: inline-block;
+  padding: 5px 10px;
+  float:right;
+
+}
+@media screen and (max-width:950px){
+  #listmnu a{
+    display: none;
+  }
+
+}
+
+#listmnu a{
+    color:#fff;
+}
+#listmnu a:hover{
+  color:yellow;
+  text-decoration: none;
+}
+#lrg-mnu{
+  position: relative;
+  top:0px;
+  left:0px;
+  width: 100%;
+  height: 200px;
+background: #67B26F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border-bottom: 2px solid #d3d3d3;
+}
+#small-mnu{
+  position: relative;
+  top:0%;
+  left:0px;
+  width: 100%;
+  height: 100%;
+background: #67B26F;  /* fallback for old browsers */
+background-image: url("img/auth-back.jpg") !important;
+background-size:100%;
+}
+#small-mnu a{
+  display: block;
+  position: relative;
+  text-align: left;
+  font-size: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+#listu{
+  margin-left: 0px !important;
+  padding-left: 1px !important;
+}
+#lrg-mnu img{
+border-radius: 100% !important;
+border: 6px solid #fff !important;
+box-shadow: inset 0 0 0px 4px #5f5b5b !important;
+
+}
